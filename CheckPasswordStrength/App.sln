@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckPasswordStrength", "CheckPasswordStrength.csproj", "{BDA83EE1-D874-43DD-964A-4A82E03D5C74}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CheckPasswordStrength", "CheckPasswordStrength.csproj", "{BDA83EE1-D874-43DD-964A-4A82E03D5C74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckPasswordStrength.Tests", "..\CheckPasswordStrength.Tests\CheckPasswordStrength.Tests.csproj", "{E217734D-0EBA-416B-9311-4709727E4F67}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{BDA83EE1-D874-43DD-964A-4A82E03D5C74}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDA83EE1-D874-43DD-964A-4A82E03D5C74}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BDA83EE1-D874-43DD-964A-4A82E03D5C74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E217734D-0EBA-416B-9311-4709727E4F67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E217734D-0EBA-416B-9311-4709727E4F67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E217734D-0EBA-416B-9311-4709727E4F67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E217734D-0EBA-416B-9311-4709727E4F67}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
