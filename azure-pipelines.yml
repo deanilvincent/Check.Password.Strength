@@ -1,0 +1,23 @@
+pool:
+ vmImage: 'windows-latest'
+
+variables:
+  BuildConfiguration: 'Release'
+  SolutionPath: 'App.sln'
+
+steps:
+- task: DotNetCoreInstaller@0
+ inputs:
+ version: '3.1.0'
+
+- task: DotNetCoreCLI@2
+  displayName: 'Build web project'
+  inputs:
+    command: 'build'
+    projects: $(SolutionPath)
+
+- task: DotNetCoreCLI@3
+ inputs:
+ command: test
+ projects: '**/*Tests/*.csproj'
+ arguments: '--configuration $(buildConfiguration)'
