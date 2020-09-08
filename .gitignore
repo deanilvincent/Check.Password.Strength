@@ -5,3 +5,11 @@
 /App/obj
 /App/.vs/App/v16
 /App/bin/Debug
+
+.vs
+/CheckPasswordStrength/bin
+/CheckPasswordStrength/obj
+
+/CheckPasswordStrength.Tests/bin
+/CheckPasswordStrength.Tests/obj
+
