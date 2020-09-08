@@ -1,23 +1,14 @@
+trigger:
+- master
+
 pool:
- vmImage: 'windows-latest'
+  vmImage: 'windows-2019'
 
 variables:
-  BuildConfiguration: 'Release'
-  SolutionPath: 'App.sln'
+  buildConfiguration: 'Release'
 
 steps:
-- task: DotNetCoreInstaller@0
- inputs:
- version: '3.1.0'
+- script: dotnet restore
 
-- task: DotNetCoreCLI@2
-  displayName: 'Build web project'
-  inputs:
-    command: 'build'
-    projects: $(SolutionPath)
-
-- task: DotNetCoreCLI@3
- inputs:
- command: test
- projects: '**/*Tests/*.csproj'
- arguments: '--configuration $(buildConfiguration)'
+- script: dotnet build --configuration $(buildConfiguration)
+  displayName: 'dotnet build $(buildConfiguration)'
